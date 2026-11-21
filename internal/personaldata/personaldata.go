@@ -1,9 +1,14 @@
 package personaldata
 
+import "fmt"
+
+// Personal — структура с персональными данными пользователя.
 type Personal struct {
-	// TODO: добавить поля
+	Name   string  // Имя пользователя
+	Weight float64 // Вес пользователя в кг
+	Height float64 // Рост пользователя в метрах
 }
 
 func (p Personal) Print() {
-	// TODO: реализовать функцию
+	fmt.Printf("Имя: %s\nВес: %.2f\nРост: %.2f\n", p.Name, p.Weight, p.Height)
 }
